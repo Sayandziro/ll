@@ -89,13 +89,22 @@ WSGI_APPLICATION = 'learning_log.wsgi.application'
 # }
 
 DATABASES = {
+    # "default": {
+    #     "ENGINE": "django.db.backends.postgresql_psycopg2",
+    #     "NAME": "user_info",
+    #     "USER": "postgres",
+    #     "PASSWORD": "anevaz29",
+    #     "HOST": "localhost",
+    #     "PORT": "5432",
+    # }
     "default": {
-        "ENGINE": "django.db.backends.postgresql_psycopg2",
-        "NAME": "user_info",
+        "ENGINE": "django.db.backends.postgresql",
+        "URL": "postgresql://postgres:TYaJtdHv5fPtX67gNLet@containers-us-west-202.railway.app:6774/railway",
+        "NAME": "railway",
         "USER": "postgres",
-        "PASSWORD": "anevaz29",
-        "HOST": "localhost",
-        "PORT": "5432",
+        "PASSWORD": "TYaJtdHv5fPtX67gNLet",
+        "HOST": "containers-us-west-202.railway.app",
+        "PORT": "6774",
     }
 }
 
